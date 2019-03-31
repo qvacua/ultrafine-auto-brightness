@@ -1,6 +1,8 @@
 /**
  * Tae Won Ha - http://taewon.de - @hataewon
  * See LICENSE
+ *
+ * Slightly modified version of https://github.com/kfix/ddcctl/blob/master/ddcctl.m
  */
 
 #import <AppKit/AppKit.h>
