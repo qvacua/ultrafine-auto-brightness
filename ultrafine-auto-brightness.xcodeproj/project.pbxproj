@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1929B0A0F4F1577A6F527EED /* DDC.c in Sources */ = {isa = PBXBuildFile; fileRef = 1929B6AF746F43FCA46B3E87 /* DDC.c */; };
+		1929B4AD369727DB75F70768 /* AmbientLightSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929BE875518AF15DBC3E8A5 /* AmbientLightSensor.m */; };
+		1929BDFCF7EFB7B07E8F8147 /* UltraFineDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929B563716CBD8CDFB99586 /* UltraFineDisplay.m */; };
 		4BEB1F2D225140F800BEF3CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEB1F2C225140F800BEF3CA /* main.m */; };
+		4BEB1F352251414500BEF3CA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEB1F342251414500BEF3CA /* IOKit.framework */; };
+		4BEB1F37225146AB00BEF3CA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEB1F36225146AB00BEF3CA /* AppKit.framework */; };
+		4BEB1F39225146B100BEF3CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEB1F38225146B100BEF3CA /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1929B563716CBD8CDFB99586 /* UltraFineDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UltraFineDisplay.m; sourceTree = "<group>"; };
+		1929B5A8DC900332604863D0 /* DDC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDC.h; path = ddcctl/DDC.h; sourceTree = SOURCE_ROOT; };
+		1929B6AF746F43FCA46B3E87 /* DDC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DDC.c; path = ddcctl/DDC.c; sourceTree = SOURCE_ROOT; };
+		1929B8A0F0B2CADF0597ED98 /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		1929BB16BB4950C87946C1F3 /* ddcctl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ddcctl.m; path = ddcctl/ddcctl.m; sourceTree = SOURCE_ROOT; };
+		1929BC5330BD4C94C0982EC8 /* UltraFineDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UltraFineDisplay.h; sourceTree = "<group>"; };
+		1929BE875518AF15DBC3E8A5 /* AmbientLightSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmbientLightSensor.m; sourceTree = "<group>"; };
+		1929BF8E061DDFBB948D7D72 /* AmbientLightSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbientLightSensor.h; sourceTree = "<group>"; };
 		4BEB1F29225140F800BEF3CA /* ultrafine-auto-brightness */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ultrafine-auto-brightness"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEB1F2C225140F800BEF3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BEB1F342251414500BEF3CA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4BEB1F36225146AB00BEF3CA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4BEB1F38225146B100BEF3CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEB1F39225146B100BEF3CA /* Foundation.framework in Frameworks */,
+				4BEB1F37225146AB00BEF3CA /* AppKit.framework in Frameworks */,
+				4BEB1F352251414500BEF3CA /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +63,7 @@
 			children = (
 				4BEB1F2B225140F800BEF3CA /* ultrafine-auto-brightness */,
 				4BEB1F2A225140F800BEF3CA /* Products */,
+				4BEB1F332251414500BEF3CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +79,26 @@
 			isa = PBXGroup;
 			children = (
 				4BEB1F2C225140F800BEF3CA /* main.m */,
+				1929BE875518AF15DBC3E8A5 /* AmbientLightSensor.m */,
+				1929BF8E061DDFBB948D7D72 /* AmbientLightSensor.h */,
+				1929B6AF746F43FCA46B3E87 /* DDC.c */,
+				1929B5A8DC900332604863D0 /* DDC.h */,
+				1929BB16BB4950C87946C1F3 /* ddcctl.m */,
+				1929B563716CBD8CDFB99586 /* UltraFineDisplay.m */,
+				1929BC5330BD4C94C0982EC8 /* UltraFineDisplay.h */,
+				1929B8A0F0B2CADF0597ED98 /* logger.h */,
 			);
 			path = "ultrafine-auto-brightness";
+			sourceTree = "<group>";
+		};
+		4BEB1F332251414500BEF3CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BEB1F38225146B100BEF3CA /* Foundation.framework */,
+				4BEB1F36225146AB00BEF3CA /* AppKit.framework */,
+				4BEB1F342251414500BEF3CA /* IOKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BEB1F2D225140F800BEF3CA /* main.m in Sources */,
+				1929B4AD369727DB75F70768 /* AmbientLightSensor.m in Sources */,
+				1929B0A0F4F1577A6F527EED /* DDC.c in Sources */,
+				1929BDFCF7EFB7B07E8F8147 /* UltraFineDisplay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
