@@ -12,7 +12,7 @@
 
 os_log_t logger;
 
-static const int UPDATE_INTERVAL = 1;
+static const int UPDATE_INTERVAL = 10;
 
 static AmbientLightSensor *sensor;
 static UltraFineDisplay *display;
